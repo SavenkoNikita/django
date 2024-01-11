@@ -9,4 +9,5 @@ def index(request):
 
 
 def time(request):
-    return HttpResponse(f'Текущее время - [{datetime.datetime.now().time()}]')
+    time_now = datetime.datetime.now().time()
+    return HttpResponse(f'Текущее время - [{time_now}]')
